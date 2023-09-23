@@ -22,8 +22,4 @@ def get_password():
     return password
 
 
-def do_stuff():
-    """Function docstring"""
-
-
 main()
