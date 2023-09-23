@@ -1,5 +1,29 @@
-get_password = input("Enter password: ")
 
-asterisks = '*' * len(get_password)
+"""Module docstring"""
 
-print(asterisks)
+
+# imports
+# CONSTANTS
+
+def main():
+    """Function docstring"""
+    password = get_password()
+
+    print_asterisks(password)
+
+
+def print_asterisks(password):
+    asterisks = '*' * len(password)
+    print(asterisks)
+
+
+def get_password():
+    password = input("Enter password: ")
+    return password
+
+
+def do_stuff():
+    """Function docstring"""
+
+
+main()
