@@ -48,7 +48,7 @@ def get_valid_score():
             if 0 <= score <= 100:
                 return score
             else:
-                print("score must be between 0 and 100.")
+                print("Score must be between 0 and 100.")
         except ValueError:
             print("Invalid input. Please enter a real number")
 
