@@ -6,7 +6,7 @@ def main():
         choice = input("Enter a choice:").upper()
 
         if choice == "G":
-            return get_valid_score()
+            user_score = get_valid_score()
         elif choice == "P":
             if user_score is not None:
                 print_result(user_score)
@@ -24,6 +24,11 @@ def main():
             print("Please enter valid option!")
 
 
+def print_result(score):
+    result = grade_score(score)
+    print(f"Result: {result}")
+
+
 def print_menu():
     print("Menu:")
     print("(G)et a valid score")
@@ -34,11 +39,6 @@ def print_menu():
 
 def show_stars(score):
     print("Stars: " + "*" * int(score))
-
-
-def print_result(score):
-    result = grade_score(score)
-    print(f"Result: {result}")
 
 
 def get_valid_score():
